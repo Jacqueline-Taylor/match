@@ -1,0 +1,1 @@
+json.partial! "general_educators/general_educator", general_educator: @general_educator

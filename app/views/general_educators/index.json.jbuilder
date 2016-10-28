@@ -1,0 +1,1 @@
+json.array! @general_educators, partial: 'general_educators/general_educator', as: :general_educator

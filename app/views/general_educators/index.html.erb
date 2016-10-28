@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing General Educators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rating</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @general_educators.each do |general_educator| %>
+      <tr>
+        <td><%= general_educator.name %></td>
+        <td><%= general_educator.rating %></td>
+        <td><%= link_to 'Show', general_educator %></td>
+        <td><%= link_to 'Edit', edit_general_educator_path(general_educator) %></td>
+        <td><%= link_to 'Destroy', general_educator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New General educator', new_general_educator_path %>

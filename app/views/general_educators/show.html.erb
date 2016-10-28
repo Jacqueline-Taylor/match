@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @general_educator.name %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @general_educator.rating %>
+</p>
+
+<%= link_to 'Edit', edit_general_educator_path(@general_educator) %> |
+<%= link_to 'Back', general_educators_path %>
